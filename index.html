@@ -41,7 +41,8 @@
                     </div>
                     <div class="col-12 fileInput">
                         <div class="styled-input wide">
-                            <input type="file" name="file" accept="image/*, video/* , .txt , .trace , .log , .dump , .dmp " multiple>
+                            <input type="file" name="file"
+                                accept="image/*, video/* , .txt , .trace , .log , .dump , .dmp " multiple>
                             <label>Choose Files( Max 10 files )</label>
                         </div>
                     </div>
@@ -75,9 +76,10 @@
 
         function sendEmail(event) {
             event.preventDefault();
-            // Here you can add your code to handle the form submission
+            alert("Worked!, but still in Test mode");
             console.log('Form submitted!');
         }
+
 
         document.addEventListener('DOMContentLoaded', (event) => {
             const inputs = document.querySelectorAll('input, textarea');
