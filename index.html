@@ -22,20 +22,23 @@
                 <div class="row input-container">
                     <div class="col-md-6 col-sm-12">
                         <div class="styled-input">
-                            <input class="input" type="text" name="email" id="email"  required oninput="validateEmail()">
+                            <input class="input" type="text" name="email" id="email" required oninput="validateEmail()">
                             <label>Email</label>
                             <div class="invalid-feedback">Please enter a valid email address.</div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="styled-input">
-                            <input class="input" type="text" name="title" placeholder="Describe the bug in 2 words" required>
+                            <input class="input" type="text" name="title" placeholder="Describe the bug in 2 words"
+                                required>
                             <label>Short title</label>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="styled-input wide">
-                            <textarea class="input" name="message" placeholder="Provide as much as information, step by step guide to create the bug. " required></textarea>
+                            <textarea class="input" name="message"
+                                placeholder="Provide as much as information, step by step guide to create the bug. "
+                                required></textarea>
                             <label>Detailed description</label>
                         </div>
                     </div>
@@ -83,7 +86,7 @@
 
         document.addEventListener('DOMContentLoaded', (event) => {
             const inputs = document.querySelectorAll('input, textarea');
-            inputs.forEach(input => input.value = '');
+            input => input.value = ''
         });
     </script>
 </body>

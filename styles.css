@@ -33,7 +33,8 @@ h4 {
     box-shadow: 20px 7px 22px 0px rgba(225, 225, 225, 0.5);
     backdrop-filter: blur(32px);
 }
-input:not(blank)~label, 
+
+input:not(blank)~label,
 input:focus~label,
 textarea:focus~label,
 input:valid~label,
@@ -45,14 +46,19 @@ textarea:valid~label {
     transition: all 0.225s ease;
 }
 
-.input::placeholder {
-    opacity: 0.0; /* Set initial opacity */
+.input::placeholder {   
+    transition: opacity 1s ease;
+    opacity: 0.0;
+    /* Set initial opacity */
 }
 
 .input:focus::placeholder {
-    opacity: 1; /* Set opacity when input is focused */
+    transition: opacity 1s ease;
+    color: #E07F09;
+    opacity: 1;
+    /* Set opacity when input is focused */
 }
- 
+
 .styled-input {
     float: left;
     width: 293px;
