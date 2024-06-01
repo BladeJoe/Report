@@ -45,7 +45,13 @@ textarea:valid~label {
     transition: all 0.225s ease;
 }
 
+.input::placeholder {
+    opacity: 0.0; /* Set initial opacity */
+}
 
+.input:focus::placeholder {
+    opacity: 1; /* Set opacity when input is focused */
+}
  
 .styled-input {
     float: left;
